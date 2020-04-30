@@ -1,0 +1,387 @@
+        :root{
+          --panel-bg: #ffccff;
+          --container-bg: #f1f2f6;
+          --text: #2f3542;
+          --panel-bg2:#CD5C5C;
+          --text2: #000000;
+          --text3: #DC143C;
+          --panel-bg3: #ffccff;
+          --text5: #000000;
+          --text4: #DC143C;
+          --panel-bg4: #DC143C
+        }
+        :root[theme='dark'] {
+          --panel-bg: #9400D3;
+          --container-bg: #755775;
+          --text: #ced6e0;
+          --panel-bg2:#8A2BE2;
+          --text2: #ffffff;
+          --text3: #DCDCDC;
+          --panel-bg3: #9400D3;
+          --text5: #ffffff;
+          --text4: #ffffff;
+          --panel-bg4: #ffffff;
+        }
+    @font-face{
+        font-family: 'Rurintania';
+        src: url(Rurintania.ttf)
+        ;
+    }
+* {
+    margin: 0;
+  }
+        html{
+          height: 100%;
+        }
+        body{
+          height: 100%;
+          font-family: Verdana;
+          display: flex;
+          flex-direction: column;
+          color: var(--text);
+        }
+        nav{
+          padding: 0.2rem;
+          background: var(--panel-bg);
+        }
+        nav a{
+            padding: 1.1rem;
+        }
+        .container{
+          flex: 1;
+          padding: 1rem;
+          background: var(--container-bg);
+        }
+        footer{
+          padding: 1rem;
+          background: var(--panel-bg);
+        }
+        input[type=button] {
+          color: var(--text);
+          background: var(--panel-bg);
+
+          padding: 0.1rem;
+          margin: 0.1rem;
+          font-size: 1rem;
+        }
+.content{
+  font-family:URW Chancery L, cursive; 
+  font-size: 20px;
+/*  text-indent: 20px;*/
+  color: var(--text2);
+}
+.content1{
+  font-family:URW Chancery L, cursive; 
+  font-size: 20px;
+  color: var(--text2);
+}
+.content2{
+  font-family:URW Chancery L, cursive; 
+  font-size: 20px;
+  text-indent: 20px;
+  color: var(--text2);
+  text-align: center; 
+}
+.content3{
+  font-family:Mistral; 
+  font-size: 25px;
+  color: var(--text2);
+}
+.pr{
+  text-align: center; 
+  font-size: 17px;
+  font-family: Comic Sans, cursive
+} 
+.prr{
+  font-family:'Rurintania', fantasy;
+  text-align: center; 
+  font-size: 36px;
+  color: var(--text3);
+} 
+
+/*элемент мысли*/
+.sh{
+  height:15vh;
+  width:8vw;
+  float:left;
+  background: black url(images/tr.jpg) center top no-repeat;
+  background-size:cover;
+  margin-bottom:5px;
+  shape-outside: polygon(0 0, 100% 0%, 100% 75%, 75% 75%, 19% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 75% 75%, 19% 100%, 50% 75%, 0% 75%);
+}   
+/*элемент круг*/
+.sh2{
+  height:20vh;
+  width:10vw;
+  float:left;
+  background: black url(images/1.png) center top no-repeat;
+  background-size:cover;
+  margin-bottom:5px;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}   
+.sh3{
+  height:20vh;
+  width:10vw;
+  float:left;
+  margin-left: 35%;
+  background: black url(images/1.gif) center top no-repeat;
+  background-size:cover;
+  margin-bottom:5px;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}   
+.sh4{
+  height:20vh;
+  width:10vw;
+  float:left;
+  background: black url(images/2.gif) center top no-repeat;
+  background-size:cover;
+  margin-bottom:5px;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}   
+.sh5{
+  height:20vh;
+  width:10vw;
+  float:left;
+  background: black url(images/3.gif) center top no-repeat;
+  background-size:cover;
+  margin-bottom:5px;
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+}   
+/*таблица*/
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+width: 100%;
+max-width: 100%;
+height:auto;
+border-collapse: separate;
+color: var(--text);
+background: var(--panel-bg);
+}
+th {
+    background: var(--panel-bg2); /* Цвет фона строки заголовка */
+    text-align: center;
+   }
+tbody tr:hover {
+    background: #DC143C; /* Цвет фона при наведении */
+    color: #000000; /* Цвет текста при наведении */
+   }
+
+
+
+/*Фотогалерея*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+    color: #4f4f5a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#slider-wrap{ 
+    max-width:800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#active-slide {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slider{
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.slide{
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide img {
+    width:100%;
+}
+
+.Radio-But{
+    margin-top:0px;
+    text-align:center;
+}
+
+.Radio-But .ctrl-select {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(images/radioBg.png) center bottom no-repeat;
+}
+
+.Radio-But .ctrl-select:hover {
+    cursor:pointer;
+    background-position:center center;
+}
+
+.Radio-But .ctrl-select.active {
+    background-position:center top;
+}
+
+#prewbutton, #nextbutton {
+    display:block;
+    width:40px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background: url("images/arrowBg.png") left center no-repeat;
+    opacity:0.5;
+    z-index:3;
+    outline:none !important;
+}
+
+#prewbutton {
+    left:10px;
+}
+
+#nextbutton {
+    right:10px;
+    background:url(images/arrowBg.png) right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {
+    opacity:1;
+}
+ /*Выпадающие окна*/
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+body {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  background: var(--panel-bg3);
+  color: var(--text5);
+  font-size: 15px;
+
+}
+.gc {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;
+  padding-left: 40px;
+  vertical-align: top;
+}
+
+
+.gc--2-of-3 {
+  width: 66.66666%;
+}
+
+.naccs {
+  position: relative;
+  max-width: 1300px;
+  margin: 100px auto 0;
+}
+
+.naccs .menu div {
+  padding: 15px 20px 15px 40px;
+  margin-bottom: 10px;
+  color: var(--text5);
+  background: var(--panel-bg3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  font-weight: 700;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.naccs .menu div span.light {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  background: var(--panel-bg4);
+  border-radius: 100%;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.naccs .menu div.active span.light {
+  background: var(--panel-bg4);
+  left: 0;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  border-radius: 0;
+}
+
+.naccs .menu div.active {
+  color: var(--text4);
+  padding: 15px 20px 15px 20px;
+}
+
+ul.nacc {
+  position: relative;
+  height: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+ul.nacc li.active {
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+ul.nacc li p {
+  margin: 0;
+}
